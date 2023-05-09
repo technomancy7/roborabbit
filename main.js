@@ -15,6 +15,9 @@ console.log('Client startup.');
 console.log(`Running in ${path}`)
 
 class Context {
+    read_file(filename) {
+        return fs.readFileSync(`${path}/${filename}`, "utf8");
+    }
     write_cache(data) {
         fs.writeFileSync(`${path}/cache.json`, JSON.stringify(data))
     }

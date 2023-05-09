@@ -1,12 +1,13 @@
 
-export async function activate(ctx,data, payload){
+export async function activate(ctx, data, payload){
     console.log("Activating action webhook...")
 
-    //console.log(data);
+    data.url = ctx.read_file("webhook_url.txt")
+    console.log(data);
 
     console.log(payload.results)
     return
-    fetch(webhookUrl, {
+    await fetch(webhookUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
