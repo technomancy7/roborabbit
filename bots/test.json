@@ -10,9 +10,11 @@
         "data": {
             "url": "X",
             "method": "POST",
-            "headers": {},
+            "headers": {
+                "Content-Type": "application/json"
+            },
             "post_contents":{
-                "content": "A new message was posted in r/Deusex.",
+                "content": "A new message was posted in {{Subreddit}}.",
                 "embeds": [
                     {
                     "title": "{{Title}}",
