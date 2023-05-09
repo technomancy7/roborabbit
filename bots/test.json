@@ -8,7 +8,7 @@
     "action": {
         "id": "webhook",
         "data": {
-            "url": "https://discord.com/api/webhooks/1105518400421240903/B9HxxdSKvt2HIhA22Ux1AyqHkKciw4-ASrrX9b-HHicMHW-pOobxZmIDEAIhbmejvH41",
+            "url": "X",
             "method": "POST",
             "headers": {},
             "post_contents":{
