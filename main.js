@@ -2,7 +2,7 @@ const fs = require("fs");
 //import { fs } from "fs";
 
 const config = {
-    "timeout": 1000
+    "timeout": 50000
 }
 
 const scriptUrl = new URL(import.meta.url);
@@ -28,7 +28,7 @@ class Context {
 }
 
 const ctx = new Context();
-setTimeout(async function(){
+setInterval(async function(){
     const files = fs.readdirSync(`${path}/bots/`);
 
     for (const file of files) {

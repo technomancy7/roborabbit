@@ -13,19 +13,18 @@
             "headers": {
                 "Content-Type": "application/json"
             },
-            "post_contents":{
-                "content": "A new message was posted in {{Subreddit}}.",
+            "body":{
+                "content": "A new message was posted in {{subreddit}}.",
                 "embeds": [
                     {
-                    "title": "{{Title}}",
-                    "url": "{{PostURL}}",
-                    "color": null,
-                    "fields": [
-                        {
-                        "name": "{{Author}}",
-                        "value": "{{Content}}"
-                        }
-                    ]
+                        "title": "{{title}}",
+                        "url": "{{url}}",
+                        "fields": [
+                            {
+                            "name": "{{author}}",
+                            "value": "{{content_clean}}"
+                            }
+                        ]
                     }
                 ],
                 "username": "Reddit"
