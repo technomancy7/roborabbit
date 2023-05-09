@@ -1,0 +1,12 @@
+{
+    "name": "rabbit",
+    "module": "main.js",
+    "type": "module",
+    "scripts": {
+      "start": "bun run main.js"
+    },
+    "devDependencies": {
+      "bun-types": "^0.4.0"
+    },
+    "dependencies": { "fast-xml-parser": "^4.2.2" }
+  }
